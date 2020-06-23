@@ -14,11 +14,11 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div style={{ background: '#fff' }}>
+        <div style={{ background: '#045678' }}>
           <Helmet title={siteTitle} />
           <Hero data={author.node} />
           <div className="wrapper">
-            <h2 className="section-headline">Recent articles</h2>
+            <h2 className="section-headline">Jeremy's Articles</h2>
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (
