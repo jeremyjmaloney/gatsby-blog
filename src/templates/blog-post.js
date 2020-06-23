@@ -14,7 +14,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div style={{ background: '#fff' }}>
+        <div style={{ background: '#000000' }}>
           <Helmet title={`${post.title} | ${siteTitle}`} />
           <div className={heroStyles.hero}>
             <Img
@@ -30,7 +30,7 @@ class BlogPostTemplate extends React.Component {
                 display: 'block',
               }}
             >
-              {post.publishDate}
+              Date Published: {post.publishDate}
             </p>
             <div
               dangerouslySetInnerHTML={{
